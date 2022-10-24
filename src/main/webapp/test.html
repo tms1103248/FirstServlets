@@ -1,0 +1,101 @@
+<!--<!DOCTYPE html>// эта страница будет html , не обязательно-->
+<html lang="en">
+<!--// язык,-->
+<head>
+<!--    // шапка нашей страницы-->
+    <meta charset="UTF-8">
+<!--    // указывается универсальная кодировка для английского-->
+    <title>My test page</title>
+<!--    // заголовок нашей страницы-->
+    <link rel ="stylesheet" href="styles.css" />
+</head>
+<body>
+<h1>hello</h1>
+<h4>hello</h4>
+<!--заголовок и размер шрифта-->
+<br/>
+<!--Добавляет пустую строчку-->
+<p>this is <br/>my text</p>
+<!--параграф с текстом-->
+<a>this is my link</a>
+<br/>
+<a href="test2.html">this is my link</a>
+<!--ссылка-->
+
+<img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcStnkG40t5GHSd2tMzF_MEcf-gTCucTORVvm6fCkgq2bw&s"
+     alt="this is my pic"/>
+<!--вставка картинки-->
+
+<ul>
+    <li>first</li>
+    <li>second</li>
+<!--    построчно-->
+</ul>
+<!--список с точками-->
+<ol>
+    <li>first</li>
+    <li>second</li>
+    </ol>
+<!--нумерация с цифрами-->
+
+<dl>
+    <dt>this</dt>
+    <dd>here</dd>
+</dl>
+<!--для цитат-->
+
+<table border="1">
+<!--    граница таблицы, цифры обозанчают толщину-->
+    <thead class="red_column"> this is example of my table </thead>
+    <tbody>
+    <tr>
+        <th class="red_column">first column</th>
+        <!--        класс позволяет определить стили, которые одинаковы для нескольких компанентов-->
+        <th id="sec_col">second column </th>
+    </tr>
+    <tr><td>first</td><td>second</td></tr>
+    <tr><td><strong>third</strong></td><td><i>forth</i></td></tr>
+    </tbody>
+</table>
+<!--таблица-->
+<form action="hello-2" method="GET">
+<!--GET прописывает логин и пароль в строчке-->
+<!--    <form action="hello-2" method="POST"> не указывает путь с логином и паролем-->
+<!--    то, что может быть отправлено на сервер-->
+    <label>First Name:</label> <input type ="text" name="first_name" value="123">
+<!--    123 это предзаполненное поле-->
+        <br/>
+        <label>Last Name:</label> <input type ="text" name="last_name" placeholder=" enter last name">
+<!--    placeholder подсказка, значение не уйдет на сервер-->
+    <input type="password" name="password"/><br/>
+    <input type="date" name="date"/><br/>
+    <input type="datetime-local" name="datetime-local"/><br/>
+    <input type="color" name="color"/><br/>
+    <input type="checkbox" id="check"name="checkbox"/>
+    <input type="checkbox" id="check2"name="checkbox"/>
+    <br/>
+    <input type="radio" id="first_radio"name="radio" checked/>
+<!--   checked предустановленно выбран вариант ответа-->
+    <br/>
+    <input type="number" name="number"/>
+    <br/>
+    <label for="first_radio">first radio</label>
+    <input type="radio" id="second_radio"name="radio"/>
+    <label for="second_radio">second radio</label>
+    <br/>
+    <input type="range" maxlength="100" minlength="10" oninput="this.nextElementSibling.value=this.value"/>
+    <output>24</output>
+    <br/>
+<input type="search" name="search">
+    <br/>
+        <input type="submit" value="Login"/>
+<!--    добавляем кнопку и называем Login, пытается отправить на сервлет hello-2-->
+    <input type="button" value="my button"/>
+<!--    добавляем кнопку, называется кнопка, ничего не отправляет на севлет-->
+<
+
+</form>
+
+
+</body>
+</html>

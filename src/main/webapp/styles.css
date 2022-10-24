@@ -1,0 +1,50 @@
+h1 {
+    color: blue;
+    font-family: Bahnschrift;
+    font-size: 200%;
+}
+body {
+    background-color: antiquewhite;
+    /*background-image: url(""); можно вставить картинку*/
+}
+table {
+    margin: 20px 30px 40px 50px;
+/*    отступ*/
+}
+td {
+    padding: 15px;
+/*    отступ внутри элемента, как вариант можно для всех сторон
+для всех td в тексте*/
+}
+#sec_col {
+    /* находит айдишки, для sec_col устанавливаем цвет*/
+    background-color: aquamarine;
+}
+.red_column {
+/*    находит классы, определить для всего класса*/
+    color: chocolate;
+}
+input[type=text] {
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    box-sizing: border-box;
+}
+input[type=submit]:hover {
+    background-color: chocolate;
+    width: 50%;
+/*    меняет стиль при наведении*/
+}
+div {
+    border: 1px solid saddlebrown;
+    width: 100%;
+
+}
+.left_div {
+    float: left;
+    width: 48%;
+}
+.right_div {
+    float: right;
+    width: 48%;
+}

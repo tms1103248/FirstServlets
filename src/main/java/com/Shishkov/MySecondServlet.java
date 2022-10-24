@@ -15,4 +15,11 @@ public class MySecondServlet extends HttpServlet {
         resp.getWriter().println("here 2");
         req.getRequestDispatcher("index.jsp").forward(req,resp);
     }
+
+    @Override
+    protected void doPost(HttpServletRequest req, HttpServletResponse resp) throws ServletException, IOException {
+        String firstname =req.getParameter("first_name");
+
+
+    }
 }

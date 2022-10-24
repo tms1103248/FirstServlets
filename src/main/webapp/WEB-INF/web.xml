@@ -9,26 +9,45 @@
 
 
     <display-name>Archetype Created Web Application</display-name>
+
+<!--    <context-param>-->
+<!--        <param-name>username</param-name>-->
+<!--        <param-value>user</param-value>-->
+<!--    </context-param>-->
+<!--    <context-param>-->
+<!--        <param-name>password</param-name>-->
+<!--        <param-value>pass</param-value>-->
+<!--    </context-param>-->
+
+<!--    <servlet>-->
+<!--        <servlet-name>MyFirstServlet</servlet-name>-->
+<!--        <servlet-class>com.Shishkov.MyFirstServlet</servlet-class>-->
+<!--    </servlet>-->
+<!--    <servlet-mapping>-->
+<!--        <servlet-name>MyFirstServlet</servlet-name>-->
+<!--        <url-pattern>/hello</url-pattern>-->
+<!--    </servlet-mapping>-->
+
     <servlet>
-        <servlet-name>MyFirstServlet</servlet-name>
-        <servlet-class>com.Shishkov.MyFirstServlet</servlet-class>
+        <servlet-name>DataTimeDemo</servlet-name>
+        <servlet-class>com.Shishkov.DataTimeDemo</servlet-class>
     </servlet>
     <servlet-mapping>
-        <servlet-name>MyFirstServlet</servlet-name>
-        <url-pattern>/hello</url-pattern>
+        <servlet-name>DataTimeDemo</servlet-name>
+        <url-pattern>/Time</url-pattern>
     </servlet-mapping>
 
-    <filter>
-        <filter-name>MyFilter</filter-name>
-        <filter-class>com.Shishkov.MyFirstFilter</filter-class>
-    </filter>
-    <filter-mapping>
-        <filter-name>MyFilter</filter-name>
-        <url-pattern>/*</url-pattern>
-<!--     вместо hello *  отрабатывает все фильтры-->
-    </filter-mapping>
-    <listener>
-        <listener-class>com.Shishkov.MyFirstListener</listener-class>
-    </listener>
+<!--    <filter>-->
+<!--        <filter-name>MyFilter</filter-name>-->
+<!--        <filter-class>com.Shishkov.MyFirstFilter</filter-class>-->
+<!--    </filter>-->
+<!--    <filter-mapping>-->
+<!--        <filter-name>MyFilter</filter-name>-->
+<!--        <url-pattern>/*</url-pattern>-->
+<!--&lt;!&ndash;     вместо hello *  отрабатывает все фильтры&ndash;&gt;-->
+<!--    </filter-mapping>-->
+<!--    <listener>-->
+<!--        <listener-class>com.Shishkov.MyFirstListener</listener-class>-->
+<!--    </listener>-->
 
 </web-app>

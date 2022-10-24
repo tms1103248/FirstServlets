@@ -39,6 +39,9 @@ public class MyFirstServlet extends HttpServlet {
         req.getSession().setAttribute("A", "my attribute");
         req.getSession().setAttribute("A", "my attribute 2");//
         req.getSession().removeAttribute("A");
+
+        User myUser =(User) getServletContext().getAttribute("user");
+        System.out.println("My user:" +myUser.getUsername());
         System.out.println("_____________________________________________");
 //
 //        resp.addCookie(new Cookie("my cookie", "123"));// установить куки, посмотреть, что было раньше написано у клиента
